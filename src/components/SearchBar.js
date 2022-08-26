@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
                 <form className="ui form"
                     onSubmit={this.onFormSubmit} >
 
-                    <div className='field'>
+                    <div className='inline field'>
                         <input
                             className="prompt"
                             type="text"
@@ -26,8 +26,10 @@ class SearchBar extends React.Component {
                             value={this.state.term}
                             onChange={this.onInputChange} // onChange; Update this.state.term
                         />
+                        <button className="ui icon button">
+                            <i className="search icon"></i>
+                        </button>
                     </div>
-
                 </form>
             </div>
         );
