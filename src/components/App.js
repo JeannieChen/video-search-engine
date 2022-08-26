@@ -3,6 +3,8 @@ import SearchBar from "./SearchBar";
 import Youtube from "../API/Youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import Footer from "./Footer";
+import logo from '../img/heart.png';
 
 class App extends React.Component {
     state = { videos: [], selectedVideo: null };
@@ -28,8 +30,33 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="ui container" >
-                <SearchBar onTermSubmit={this.onTermSubmit} />
+            <div className="ui container"
+                style={{ marginTop: '20px', paddingBottom: '100px' }} >
+
+                {/* Header */}
+                <h2 className="ui header" style={{ paddingBottom: '5px' }}>
+                    <img alt="logo" src={logo}
+                        className="ui image" />
+                    Jeanie Go!
+                </h2>
+
+                {/* Menu - search bar */}
+                <div className="ui secondary  menu">
+                    <a className="active item" href="#">Video</a>
+                    <a className="item" href="#">Images</a>
+                    <a className="item" href="https://jeanniechen.github.io/">About Jeanie</a>
+
+                    <div className="right menu">
+                        <div className="item">
+                            <div className="ui icon input">
+                                <SearchBar onTermSubmit={this.onTermSubmit} />
+                                <i className="search link icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Video */}
                 <div className="ui grid">
                     <div className="ui row">
                         <div className="eleven wide column">
@@ -43,6 +70,9 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                {/* Footer */}
+                <Footer />
             </div>
         );
     }
