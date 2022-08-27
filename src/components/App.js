@@ -77,7 +77,7 @@ class App extends React.Component {
                 {/* Menu - search bar */}
                 <div className="ui secondary  menu">
                     <a className="active item" href="#">Video</a>
-                    <a className="item disabled" href="#">Images</a>
+                    {/* <a className="item disabled" href="#">Images</a> */}
                     <a className="item" href="https://jeanniechen.github.io/">About Jeanie</a>
 
                     <div className="right menu">
