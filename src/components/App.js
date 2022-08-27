@@ -49,7 +49,9 @@ class App extends React.Component {
                 <div className="ui row">
                     <div className="eleven wide column">
                         <VideoDetail
-                            video={this.state.selectedVideo} />
+                            video={this.state.selectedVideo}
+                            message={this.state.errorMessage}
+                        />
                     </div>
                     <div className="five wide column">
                         <VideoList
