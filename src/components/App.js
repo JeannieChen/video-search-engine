@@ -50,7 +50,6 @@ class App extends React.Component {
                     <div className="eleven wide column">
                         <VideoDetail
                             video={this.state.selectedVideo}
-                            message={this.state.errorMessage}
                         />
                     </div>
                     <div className="five wide column">

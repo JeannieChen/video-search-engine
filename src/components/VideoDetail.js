@@ -1,9 +1,16 @@
 import React from "react";
-import Spinner from "./Spinner";
 
-const VideoDetail = ({ video, message }) => {
+const VideoDetail = ({ video }) => {
     if (!video) {
-        return <Spinner message={message} />;
+        return (
+            <div className="ui icon">
+                <i className="notched circle loading icon"></i>
+                <div className="content">
+                    <h2 className="header"> Just one second..</h2>
+                    <p>We're fetching that content for you.</p>
+                </div>
+            </div>
+        );
     }
 
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
