@@ -1,7 +1,7 @@
 
 # Getting Started with Create React App
 
-This App is currently deployed at [Jeanie Go!](https://jeanniechen.github.io/video-search-engine/).
+This App is currently deployed at [Jeanie Go!](https://jeanniechen.github.io/video-search-engine/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

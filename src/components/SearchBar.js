@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
                         <input
                             className="prompt"
                             type="text"
-                            placeholder="Funny cats"
+                            placeholder="Search"
                             value={this.state.term}
                             onChange={this.onInputChange} // onChange; Update this.state.term
                         />
