@@ -14,7 +14,7 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        this.onTermSubmit('The Dodo');
+        this.onTermSubmit('NIKI Every Summertime');
     }
 
     // Call API & catch error
